@@ -5,7 +5,7 @@ var NameField = require('./NameField.jsx');
 var LeadCapture = React.createClass({
   onSubmit: function(event) {
     if(!this.refs.fieldEmail.state.valid) {
-      alert('u suck at fillin out forms. email is always in a lead capture form. dummy.');
+      alert('u suck at fillin out forms. email is always required in a lead capture form. dummy.');
     } else {
       // send request to server
       var httpRequestBody = {
